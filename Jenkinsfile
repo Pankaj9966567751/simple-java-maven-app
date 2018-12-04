@@ -1,4 +1,4 @@
-    stages {
+     stages {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
@@ -13,7 +13,7 @@
                     junit 'target/surefire-reports/*.xml' 
                 }
             }
-        }
-    }
+        } 
+    } 
 
 
